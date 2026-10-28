@@ -155,7 +155,7 @@ teselas públicas de Esri/OpenStreetMap/Carto.
 ## Instalación
 
 ```bash
-git clone https://github.com/TU_USUARIO/mortalidad-colombia-2019-dash.git
+git clone https://github.com/dstrange324/mortalidad-colombia-2019-dash.git
 cd mortalidad-colombia-2019-dash
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -163,8 +163,8 @@ pip install -r requirements.txt
 python app.py                    # http://localhost:8050
 ```
 
-> La URL de `git clone` anterior es una **plantilla**: reemplaza `TU_USUARIO`
-> por el usuario u organización de GitHub donde se publique el repositorio.
+> La URL de `git clone` anterior es la del repositorio público oficial del
+> proyecto en GitHub.
 
 Los datos procesados (`data/*.parquet`) y las geometrías (`data/*.geojson`)
 vienen incluidos, así que no hace falta ningún paso adicional para ejecutar la

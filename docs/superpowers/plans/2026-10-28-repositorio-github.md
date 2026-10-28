@@ -138,7 +138,7 @@ Ejecutar `gh auth status`; si es necesario, usar `gh auth login --hostname githu
 
 - [ ] **Step 3: Incorporar la URL y auditar el contenido**
 
-Construir la URL con el usuario autenticado y el nombre aprobado, actualizar las instrucciones de clonación y hacer commit. Comprobar con `git ls-files` que no hay rutas prohibidas y con `git rev-parse --show-toplevel` que la raíz sigue siendo la autorizada. Buscar con Grep en los archivos versionables de texto los patrones `-----BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY-----|AKIA[0-9A-Z]{16}|tarea_dash`; ninguno debe aparecer. Si hay una coincidencia real, detener la publicación y retirar el secreto sin exponerlo en la salida.
+Construir la URL con el usuario autenticado y el nombre aprobado, actualizar las instrucciones de clonación y hacer commit. Comprobar con `git ls-files` que no hay rutas prohibidas y con `git rev-parse --show-toplevel` que la raíz sigue siendo la autorizada. Buscar con Grep en los archivos versionables de texto los patrones `-----BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY-----|AKIA[0-9A-Z]{16}`; ninguno debe aparecer. Las rutas de llaves se auditan por separado con `git ls-files`, por lo que el nombre de ejemplo usado en `git check-ignore` no es una credencial. Si hay una coincidencia real, detener la publicación y retirar el secreto sin exponerlo en la salida.
 
 - [ ] **Step 4: Crear un único remoto**
 
