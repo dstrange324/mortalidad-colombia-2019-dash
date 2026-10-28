@@ -1,0 +1,12 @@
+.venv/
+.tools/
+.verification/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pem
+*.key
+*.bak
+*.bak.*
+.DS_Store
