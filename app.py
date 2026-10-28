@@ -1,16 +1,5 @@
 """Aplicacion web dinamica: Mortalidad en Colombia 2019.
 
-Dashboard construido con Dash y Plotly a partir de las Estadisticas
-Vitales del DANE (defunciones no fetales, ano 2019).
-
-Diseno: encabezado de ancho completo con titulo, KPIs y filtros
-(departamento, mes, causa de muerte y sexo) separados por divisores;
-mapa coropletico a pantalla completa (satelital Esri por defecto) con
-control de cartografia sobre el mapa; 6 graficas en dos paneles
-laterales uniformes sin scroll. Las 10 principales causas de muerte se
-muestran como barras apiladas por departamento, con una convencion de
-color fija por departamento en todo el dashboard.
-
 Ejecutar local:   python app.py        -> http://localhost:8050
 Despliegue PaaS:  gunicorn app:server  (ver requirements.txt / Procfile)
 """
